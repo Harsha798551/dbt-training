@@ -3,4 +3,4 @@
         materialized='table'
     )
 }}
-select * from RAW.SCHEMAGLOBALMART.PRODUCT
+select * from {{ source('globalmart', 'product') }}

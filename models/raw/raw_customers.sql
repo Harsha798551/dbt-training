@@ -4,4 +4,4 @@
     )
 }}
 
-SELECT * FROM RAW.SCHEMAGLOBALMART.CUSTOMER
+SELECT * FROM {{ source('globalmart', 'customer') }}
